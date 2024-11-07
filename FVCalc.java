@@ -5,7 +5,7 @@ public class FVCalc {
 		double percent = Double.parseDouble(args[1]);
 		int yrs = Integer.parseInt(args[2]);
 		double futureVal = sum * Math.pow(percent/100.0 + 1, yrs);
-		System.out.println("After " + yrs  + " years, $" + sum + " saved at " + percent + 
+		System.out.println("After " + yrs  + " years, a $" + sum + " saved at " + percent + 
 		                    "% will yield $" + ( (int) futureVal));
 	}
 }
