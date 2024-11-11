@@ -14,16 +14,18 @@ public class TimeFormat {
 		int minutes = Integer.parseInt("" + args[0].charAt(3) + args[0].charAt(4));
         // Replace this comment with the rest of your code
 		String newMinutes = "" + minutes;
-		if (minutes < 10)
-		    newMinutes = "0" + newMinutes;
-
-		if (hours < 12) 
-			System.out.println(hours + ":" + newMinutes + " AM");
-		
-		if (hours == 12) 
-			System.out.println(hours + ":" + newMinutes + " PM");
-		
-		if (hours > 12) 
-		    System.out.println((hours - 12) + ":" + newMinutes + " PM");
+		if (minutes < 10) {
+            newMinutes = "0" + newMinutes;
+		}
+		if (hours < 12) {
+            System.out.println(hours + ":" + newMinutes + " AM");
+		}
+		if (hours == 12) {
+            System.out.println(hours + ":" + newMinutes + " PM");
+		}
+		if (hours > 12) {
+			System.out.println((hours - 12) + ":" + newMinutes + " PM");
+		}
+		   
 	}
 }
